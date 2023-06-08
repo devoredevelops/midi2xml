@@ -26,15 +26,9 @@ def write_measure_attributes(
     # treble is G2, bass is F4 (else assumes treble)
     clef = ET.SubElement(attributes, "clef")
     sign = ET.SubElement(clef, "sign")
-    if clef_type == "bass":
-        sign.text = "F"
-    else:
-        sign.text = "G"
+    sign.text = "F" if clef_type == "bass" else "G"
     line = ET.SubElement(clef, "line")
-    if clef_type == "bass":
-        line.text = "4"
-    else:
-        line.text = "2"
+    line.text = "4" if clef_type == "bass" else "2"
     return attributes
 
 
@@ -50,69 +44,51 @@ def get_note_type(note_duration):
         if note_duration >= 190:
             note_duration -= 192
             note_type += "breve"
-        # length 168
         elif note_duration >= 166:
             note_duration -= 168
             note_type += "ddwhole"
-        # length 144
         elif note_duration >= 142:
             note_duration -= 144
             note_type += "dwhole"
-        # length 96
         elif note_duration >= 94:
             note_duration -= 96
             note_type += "whole"
-        # length 84
         elif note_duration >= 82:
             note_duration -= 84
             note_type += "ddhalf"
-        # length 72
         elif note_duration >= 70:
             note_duration -= 72
             note_type += "dhalf"
-        # length 48
         elif note_duration >= 46:
             note_duration -= 48
             note_type += "half"
-        # length 42
         elif note_duration >= 40:
             note_duration -= 42
             note_type += "ddquarter"
-        # length 36
         elif note_duration >= 34:
             note_duration -= 36
             note_type += "dquarter"
-        # length 24
         elif note_duration > 22:
             note_duration -= 24
             note_type += "quarter"
-        # length 21
         elif note_duration >= 20:
             note_duration -= 21
             note_type += "ddeighth"
-        # length 18
         elif note_duration >= 16:
             note_duration -= 18
             note_type += "deighth"
-        # length 12
         elif note_duration >= 10:
             note_duration -= 12
             note_type += "eighth"
-        # length 9
         elif note_duration >= 8:
             note_duration -= 9
             note_type += "d16th"
-        # length 6
-        elif note_duration >= 4:
+        else:
             note_duration -= 6
             note_type += "16th"
-        else:
-            break
     if note_type == "" and note_duration > 0:
         return "32nd"
-    if note_type[-1] == "+":
-        return note_type[:-1]
-    return note_type
+    return note_type[:-1] if note_type[-1] == "+" else note_type
 
 
 """
@@ -140,7 +116,7 @@ def create_note(
     # if impossible to create note of correct duration with 1 note, creates multiple and ties them together
     # example: duration of half note + eighth note cannot be made using a single valid note duration
     compoundNote = True
-    notes = list()
+    notes = []
     splitPoint = 0
     while compoundNote:
         prevSplit = splitPoint
@@ -153,52 +129,43 @@ def create_note(
         step = ET.SubElement(pitch, "step")
         step.text = str(note_name[0])
         # checks for accidentals (only natural/sharp/flat)
-        if len(note_name) == 3:
-            # natural
-            if note_name[1] != chr(9838):
-                alter = ET.SubElement(pitch, "alter")
-                # sharp
-                if note_name[1] == chr(9839) or note_name[1] == "#":
-                    alter.text = "1"
-                # flat
-                else:
-                    alter.text = "-1"
+        if len(note_name) == 3 and note_name[1] != chr(9838):
+            alter = ET.SubElement(pitch, "alter")
+            # sharp
+            alter.text = "1" if note_name[1] in [chr(9839), "#"] else "-1"
         octave = ET.SubElement(pitch, "octave")
         octave.text = str(note_name[-1])
         # determines length of current note, in case of multiple notes
         if splitPoint == -1:
-            if prevSplit == 0:
-                currentNoteType = str(note_type)
-            else:
-                # note_type[prevSplit+1:] doesn't read properly (resulting in type "[]")
-                currentNoteType = str(note_type[(prevSplit + 1) :])
+            currentNoteType = (
+                str(note_type) if prevSplit == 0 else str(note_type[(prevSplit + 1) :])
+            )
+        elif prevSplit == 0:
+            currentNoteType = str(note_type[:splitPoint])
         else:
-            if prevSplit == 0:
-                currentNoteType = str(note_type[:splitPoint])
-            else:
-                currentNoteType = str(note_type[(prevSplit + 1) : splitPoint])
+            currentNoteType = str(note_type[(prevSplit + 1) : splitPoint])
 
         # duration of current note
         if compoundNote:
             noteDuration = 1
-            if currentNoteType.find("breve") != -1:
+            if "breve" in currentNoteType:
                 noteDuration = 192
-            elif currentNoteType.find("whole") != -1:
+            elif "whole" in currentNoteType:
                 noteDuration = 96
-            elif currentNoteType.find("half") != -1:
+            elif "half" in currentNoteType:
                 noteDuration = 48
-            elif currentNoteType.find("quarter") != -1:
+            elif "quarter" in currentNoteType:
                 noteDuration = 24
-            elif currentNoteType.find("eighth") != -1:
+            elif "eighth" in currentNoteType:
                 noteDuration = 12
-            elif currentNoteType.find("16th") != -1:
+            elif "16th" in currentNoteType:
                 noteDuration = 6
-            elif currentNoteType.find("32nd") != -1:
+            elif "32nd" in currentNoteType:
                 noteDuration = 3
 
-            if currentNoteType.find("dd") != -1:
+            if "dd" in currentNoteType:
                 noteDuration *= 1.75
-            elif currentNoteType.find("d") != -1:
+            elif "d" in currentNoteType:
                 noteDuration *= 1.5
             noteDuration = round(noteDuration)
             note_duration -= noteDuration
@@ -215,7 +182,7 @@ def create_note(
         voice = ET.SubElement(currentNote, "voice")
         voice.text = str(note_voice)
         note_type = ET.SubElement(currentNote, "type")
-        if currentNoteType[0:2] == "dd":
+        if currentNoteType[:2] == "dd":
             note_type.text = currentNoteType[2:]
             ET.SubElement(currentNote, "dot")
             ET.SubElement(currentNote, "dot")
@@ -261,7 +228,7 @@ def write_to_xml(self, midi_object, filename):
     instNum = 1
     for instrument in song.instruments:
         if instrument.is_drum == False:
-            instId = "P" + str(instNum)
+            instId = f"P{str(instNum)}"
             partID = ET.SubElement(partList, "score-part", id=instId)
             partName = ET.SubElement(partID, "part-name")
             partName.text = instrument.name
@@ -278,7 +245,7 @@ def write_to_xml(self, midi_object, filename):
     for instrument in song.instruments:
         if instrument.is_drum == False:
             # labels id in part element, matches id from above
-            instId = "P" + str(instNum)
+            instId = f"P{str(instNum)}"
             # i keeps track of measures, based on prettymidi's downbeats list
             i = 0
             # j keeps track of time signature, based on prettymidi's time signature changes list
@@ -330,10 +297,7 @@ def write_to_xml(self, midi_object, filename):
                         treble += 1
                     else:
                         bass += 1
-                if treble >= bass:
-                    clef_type = "treble"
-                else:
-                    clef_type = "bass"
+                clef_type = "treble" if treble >= bass else "bass"
                 voiceNum = 1
 
                 # create measure
@@ -407,11 +371,6 @@ def write_to_xml(self, midi_object, filename):
                             notes = create_note(
                                 noteName, durationNum, noteType, True, True, voiceNum
                             )
-                            for currentNote in notes:
-                                measure.append(currentNote)
-                            numDivisions += durationNum
-
-                        # if note continues into next measure
                         else:
                             durationNum = round(
                                 ((downbeats[i + 1] - note.start) / measureLength) * dpm
@@ -420,12 +379,10 @@ def write_to_xml(self, midi_object, filename):
                             notes = create_note(
                                 noteName, durationNum, noteType, True, False, voiceNum
                             )
-                            for currentNote in notes:
-                                measure.append(currentNote)
-                            numDivisions += durationNum
+                        for currentNote in notes:
+                            measure.append(currentNote)
+                        numDivisions += durationNum
 
-                    # if note started in previous measure and continues into this measure
-                    # (note starts before downbeat of current measure) and (note does not end before or on downbeat of this measure)
                     elif (
                         round(((note.start - downbeats[i]) / measureLength) * dpm) < 0
                         and round(((note.end - downbeats[i]) / measureLength) * dpm) > 0
