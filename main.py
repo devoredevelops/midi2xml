@@ -2,7 +2,6 @@ from magenta.music import musicxml_reader
 import magenta.music
 import pretty_midi
 import xml.etree.ElementTree as ET
-from xml.etree.ElementTree import ElementTree
 
 """given the current measure, number of accidentals in the key (- for flats, + for sharps), and the current time signature,
 returns an element containing attributes for the current measure"""
@@ -11,6 +10,19 @@ returns an element containing attributes for the current measure"""
 def write_measure_attributes(
     current_measure, key_accidentals, time_signature, clef_type
 ):
+    """
+    Writes the measure attributes to an XML element.
+
+    Args:
+        current_measure (str): The current measure.
+        key_accidentals (int): The number of key accidentals.
+        time_signature (Fraction): The time signature.
+        clef_type (str): The type of clef.
+
+    Returns:
+        Element: The attributes XML element.
+
+    """
     attributes = ET.Element("attributes")
     # smallest note size possible, in fractions of quarter notes. 8 allows notes as small as 32nd notes
     divisions = ET.SubElement(attributes, "divisions")
@@ -227,7 +239,7 @@ def write_to_xml(self, midi_object, filename):
     # numbers parts 'P1', 'P2', etc.
     instNum = 1
     for instrument in song.instruments:
-        if instrument.is_drum == False:
+        if instrument.is_drum is False:
             instId = f"P{str(instNum)}"
             partID = ET.SubElement(partList, "score-part", id=instId)
             partName = ET.SubElement(partID, "part-name")
@@ -243,7 +255,7 @@ def write_to_xml(self, midi_object, filename):
     # same as before, resets before the for loop
     instNum = 1
     for instrument in song.instruments:
-        if instrument.is_drum == False:
+        if instrument.is_drum is False:
             # labels id in part element, matches id from above
             instId = f"P{str(instNum)}"
             # i keeps track of measures, based on prettymidi's downbeats list
@@ -430,7 +442,7 @@ def write_to_xml(self, midi_object, filename):
                             numDivisions = dpm
 
                 # if there was no note in this measure, a rest is created
-                if isNote == False:
+                if isNote is False:
                     currentNote = ET.SubElement(measure, "note")
                     ET.SubElement(currentNote, "rest")
                     duration = ET.SubElement(currentNote, "duration")
