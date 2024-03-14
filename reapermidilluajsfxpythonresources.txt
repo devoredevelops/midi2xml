@@ -1,0 +1,454 @@
+Untitled-1
+  4,13: TAGS  schwa/midi_examine "MIDI analysis utility"
+  4,27: TAGS  schwa/midi_examine "MIDI analysis utility"
+  5,6: TAGS midi/drumtrigger "processing MIDI generator"
+  5,35: TAGS midi/drumtrigger "processing MIDI generator"
+  6,6: TAGS midi/midi_arp "MIDI processing"
+  6,11: TAGS midi/midi_arp "MIDI processing"
+  6,21: TAGS midi/midi_arp "MIDI processing"
+  7,6: TAGS midi/midi_CC_mapper "MIDI processing routing"
+  7,11: TAGS midi/midi_CC_mapper "MIDI processing routing"
+  7,27: TAGS midi/midi_CC_mapper "MIDI processing routing"
+  8,6: TAGS midi/midi_choke "MIDI processing"
+  8,11: TAGS midi/midi_choke "MIDI processing"
+  8,23: TAGS midi/midi_choke "MIDI processing"
+  9,6: TAGS midi/midi_chorderizer "MIDI processing"
+  9,11: TAGS midi/midi_chorderizer "MIDI processing"
+  9,29: TAGS midi/midi_chorderizer "MIDI processing"
+  10,6: TAGS midi/midi_chordkey "MIDI processing"
+  10,11: TAGS midi/midi_chordkey "MIDI processing"
+  10,26: TAGS midi/midi_chordkey "MIDI processing"
+  11,6: TAGS midi/midi_logger "MIDI analysis utility"
+  11,11: TAGS midi/midi_logger "MIDI analysis utility"
+  11,24: TAGS midi/midi_logger "MIDI analysis utility"
+  12,6: TAGS midi/midi_maptokey "MIDI processing"
+  12,11: TAGS midi/midi_maptokey "MIDI processing"
+  12,26: TAGS midi/midi_maptokey "MIDI processing"
+  13,6: TAGS midi/midi_note_filter "MIDI processing filter"
+  13,11: TAGS midi/midi_note_filter "MIDI processing filter"
+  13,29: TAGS midi/midi_note_filter "MIDI processing filter"
+  14,6: TAGS midi/midi_note_hold "MIDI processing"
+  14,11: TAGS midi/midi_note_hold "MIDI processing"
+  14,27: TAGS midi/midi_note_hold "MIDI processing"
+  15,6: TAGS midi/midi_note_repeater "MIDI processing"
+  15,11: TAGS midi/midi_note_repeater "MIDI processing"
+  15,31: TAGS midi/midi_note_repeater "MIDI processing"
+  16,6: TAGS midi/midi_note_sanitizer "MIDI filter processing"
+  16,11: TAGS midi/midi_note_sanitizer "MIDI filter processing"
+  16,32: TAGS midi/midi_note_sanitizer "MIDI filter processing"
+  17,6: TAGS midi/midi_note2channel "MIDI processing routing"
+  17,11: TAGS midi/midi_note2channel "MIDI processing routing"
+  17,30: TAGS midi/midi_note2channel "MIDI processing routing"
+  18,6: TAGS midi/midi_transpose "MIDI processing"
+  18,11: TAGS midi/midi_transpose "MIDI processing"
+  18,27: TAGS midi/midi_transpose "MIDI processing"
+  19,6: TAGS midi/midi_velocitycontrol "MIDI processing"
+  19,11: TAGS midi/midi_velocitycontrol "MIDI processing"
+  19,33: TAGS midi/midi_velocitycontrol "MIDI processing"
+  20,6: TAGS midi/midinoteondelay "MIDI processing delay"
+  20,11: TAGS midi/midinoteondelay "MIDI processing delay"
+  20,28: TAGS midi/midinoteondelay "MIDI processing delay"
+  21,6: TAGS midi/mtc_logger "MIDI analysis utility"
+  21,23: TAGS midi/mtc_logger "MIDI analysis utility"
+  22,6: TAGS midi/program_bank_onload "MIDI generator"
+  22,32: TAGS midi/program_bank_onload "MIDI generator"
+  23,6: TAGS midi/sequencer_baby "MIDI generator sequencing"
+  23,27: TAGS midi/sequencer_baby "MIDI generator sequencing"
+  24,6: TAGS midi/sequencer_baby_v2 "MIDI generator sequencing"
+  24,30: TAGS midi/sequencer_baby_v2 "MIDI generator sequencing"
+  25,6: TAGS midi/sequencer_megababy "MIDI generator sequencing"
+  25,31: TAGS midi/sequencer_megababy "MIDI generator sequencing"
+  26,12: TAGS schwa/midi_humanizer "MIDI processing"
+  26,28: TAGS schwa/midi_humanizer "MIDI processing"
+  27,12: TAGS schwa/midi_modal_randomness "MIDI generator"
+  27,35: TAGS schwa/midi_modal_randomness "MIDI generator"
+  29,29: TAGS sstillwell/randomizer "MIDI processing generator"
+  30,27: TAGS sstillwell/volscale "MIDI processing"
+  31,9: NAME IX/MIDI_CCRider "JS: MIDI CC LFO Generator"
+  31,27: NAME IX/MIDI_CCRider "JS: MIDI CC LFO Generator"
+  32,9: NAME IX/MIDI_DuplicateFilter "JS: MIDI Duplicate Note Filter"
+  32,35: NAME IX/MIDI_DuplicateFilter "JS: MIDI Duplicate Note Filter"
+  33,9: NAME IX/MIDI_KeyMap "JS: MIDI Map To Key v2"
+  33,26: NAME IX/MIDI_KeyMap "JS: MIDI Map To Key v2"
+  34,9: NAME IX/MIDI_KeySnap "JS: MIDI Snap To Key"
+  34,27: NAME IX/MIDI_KeySnap "JS: MIDI Snap To Key"
+  35,9: NAME IX/MIDI_Router "JS: MIDI Router/Transpose"
+  35,26: NAME IX/MIDI_Router "JS: MIDI Router/Transpose"
+  36,9: NAME IX/MIDI_Tool "JS: MIDI Tool"
+  36,24: NAME IX/MIDI_Tool "JS: MIDI Tool"
+  37,10: NAME "IX/MIDI_Tool II" "JS: MIDI Tool v2"
+  37,29: NAME "IX/MIDI_Tool II" "JS: MIDI Tool v2"
+  38,9: NAME IX/MIDI_Variant "JS: MIDI Pattern/Scale Variation Generator"
+  38,27: NAME IX/MIDI_Variant "JS: MIDI Pattern/Scale Variation Generator"
+  39,10: NAME "IX/MIDI_Velocifier II" "JS: MIDI Velocity Variation Generator"
+  39,35: NAME "IX/MIDI_Velocifier II" "JS: MIDI Velocity Variation Generator"
+  40,9: NAME IX/MIDI_Wobulator "JS: MIDI Pitch Wheel LFO"
+  40,29: NAME IX/MIDI_Wobulator "JS: MIDI Pitch Wheel LFO"
+  41,34: NAME loopsamplers/loopsampler-m2-midi "JS: Loop Sampler w/MIDI Triggers"
+  41,59: NAME loopsamplers/loopsampler-m2-midi "JS: Loop Sampler w/MIDI Triggers"
+  42,38: NAME loopsamplers/super8 "JS: Super8 MIDI-controlled synchronized looper (Cockos)"
+  43,12: NAME loser/MIDI_EQ_Ducker "JS: MIDI EQ Ducker"
+  43,32: NAME loser/MIDI_EQ_Ducker "JS: MIDI EQ Ducker"
+
+/Users/user1/Library/Application Support/REAPER/reaper-jsfx.ini
+  35,9: NAME IX/MIDI_CCRider "JS: MIDI CC LFO Generator"
+  35,27: NAME IX/MIDI_CCRider "JS: MIDI CC LFO Generator"
+  36,9: NAME IX/MIDI_DuplicateFilter "JS: MIDI Duplicate Note Filter"
+  36,35: NAME IX/MIDI_DuplicateFilter "JS: MIDI Duplicate Note Filter"
+  37,9: NAME IX/MIDI_KeyMap "JS: MIDI Map To Key v2"
+  37,26: NAME IX/MIDI_KeyMap "JS: MIDI Map To Key v2"
+  38,9: NAME IX/MIDI_KeySnap "JS: MIDI Snap To Key"
+  38,27: NAME IX/MIDI_KeySnap "JS: MIDI Snap To Key"
+  39,9: NAME IX/MIDI_Router "JS: MIDI Router/Transpose"
+  39,26: NAME IX/MIDI_Router "JS: MIDI Router/Transpose"
+  40,9: NAME IX/MIDI_Tool "JS: MIDI Tool"
+  40,24: NAME IX/MIDI_Tool "JS: MIDI Tool"
+  41,10: NAME "IX/MIDI_Tool II" "JS: MIDI Tool v2"
+  41,29: NAME "IX/MIDI_Tool II" "JS: MIDI Tool v2"
+  42,9: NAME IX/MIDI_Variant "JS: MIDI Pattern/Scale Variation Generator"
+  42,27: NAME IX/MIDI_Variant "JS: MIDI Pattern/Scale Variation Generator"
+  43,10: NAME "IX/MIDI_Velocifier II" "JS: MIDI Velocity Variation Generator"
+  43,35: NAME "IX/MIDI_Velocifier II" "JS: MIDI Velocity Variation Generator"
+  44,9: NAME IX/MIDI_Wobulator "JS: MIDI Pitch Wheel LFO"
+  44,29: NAME IX/MIDI_Wobulator "JS: MIDI Pitch Wheel LFO"
+  77,34: NAME loopsamplers/loopsampler-m2-midi "JS: Loop Sampler w/MIDI Triggers"
+  77,59: NAME loopsamplers/loopsampler-m2-midi "JS: Loop Sampler w/MIDI Triggers"
+  78,38: NAME loopsamplers/super8 "JS: Super8 MIDI-controlled synchronized looper (Cockos)"
+  99,12: NAME loser/MIDI_EQ_Ducker "JS: MIDI EQ Ducker"
+  99,32: NAME loser/MIDI_EQ_Ducker "JS: MIDI EQ Ducker"
+  117,6: NAME midi/drumtrigger "JS: Audio To MIDI Drum Trigger"
+  117,37: NAME midi/drumtrigger "JS: Audio To MIDI Drum Trigger"
+  118,6: NAME midi/midi_arp "JS: MIDI Arpeggiator"
+  118,11: NAME midi/midi_arp "JS: MIDI Arpeggiator"
+  118,25: NAME midi/midi_arp "JS: MIDI Arpeggiator"
+  119,6: NAME midi/midi_CC_mapper "JS: MIDI CC Mapper"
+  119,11: NAME midi/midi_CC_mapper "JS: MIDI CC Mapper"
+  119,31: NAME midi/midi_CC_mapper "JS: MIDI CC Mapper"
+  120,6: NAME midi/midi_choke "JS: MIDI Choke"
+  120,11: NAME midi/midi_choke "JS: MIDI Choke"
+  120,27: NAME midi/midi_choke "JS: MIDI Choke"
+  121,6: NAME midi/midi_chorderizer "JS: MIDI Chorderizer"
+  121,11: NAME midi/midi_chorderizer "JS: MIDI Chorderizer"
+  121,33: NAME midi/midi_chorderizer "JS: MIDI Chorderizer"
+  122,6: NAME midi/midi_chordkey "JS: MIDI Chord In Key"
+  122,11: NAME midi/midi_chordkey "JS: MIDI Chord In Key"
+  122,30: NAME midi/midi_chordkey "JS: MIDI Chord In Key"
+  123,6: NAME midi/midi_delay "JS: MIDI Delay"
+  123,11: NAME midi/midi_delay "JS: MIDI Delay"
+  123,27: NAME midi/midi_delay "JS: MIDI Delay"
+  124,6: NAME midi/midi_logger "JS: MIDI Logger"
+  124,11: NAME midi/midi_logger "JS: MIDI Logger"
+  124,28: NAME midi/midi_logger "JS: MIDI Logger"
+  125,6: NAME midi/midi_maptokey "JS: MIDI Map To Key"
+  125,11: NAME midi/midi_maptokey "JS: MIDI Map To Key"
+  125,30: NAME midi/midi_maptokey "JS: MIDI Map To Key"
+  126,6: NAME midi/midi_note2channel "JS: MIDI Route Note To Channel"
+  126,11: NAME midi/midi_note2channel "JS: MIDI Route Note To Channel"
+  126,34: NAME midi/midi_note2channel "JS: MIDI Route Note To Channel"
+  127,6: NAME midi/midi_note_filter "JS: MIDI Note Filter"
+  127,11: NAME midi/midi_note_filter "JS: MIDI Note Filter"
+  127,33: NAME midi/midi_note_filter "JS: MIDI Note Filter"
+  128,6: NAME midi/midi_note_hold "JS: MIDI Note Hold"
+  128,11: NAME midi/midi_note_hold "JS: MIDI Note Hold"
+  128,31: NAME midi/midi_note_hold "JS: MIDI Note Hold"
+  129,6: NAME midi/midi_note_repeater "JS: MIDI Note Repeater"
+  129,11: NAME midi/midi_note_repeater "JS: MIDI Note Repeater"
+  129,35: NAME midi/midi_note_repeater "JS: MIDI Note Repeater"
+  130,6: NAME midi/midi_note_sanitizer "JS: MIDI note sanitizer"
+  130,11: NAME midi/midi_note_sanitizer "JS: MIDI note sanitizer"
+  130,36: NAME midi/midi_note_sanitizer "JS: MIDI note sanitizer"
+  131,6: NAME midi/midi_transpose "JS: MIDI Transpose Notes"
+  131,11: NAME midi/midi_transpose "JS: MIDI Transpose Notes"
+  131,31: NAME midi/midi_transpose "JS: MIDI Transpose Notes"
+  132,6: NAME midi/midi_velocitycontrol "JS: MIDI Velocity Control"
+  132,11: NAME midi/midi_velocitycontrol "JS: MIDI Velocity Control"
+  132,37: NAME midi/midi_velocitycontrol "JS: MIDI Velocity Control"
+  133,6: NAME midi/midinoteondelay "JS: MIDI Note-On Delay"
+  133,11: NAME midi/midinoteondelay "JS: MIDI Note-On Delay"
+  133,32: NAME midi/midinoteondelay "JS: MIDI Note-On Delay"
+  134,6: NAME midi/mtc_logger "JS: MTC Logger"
+  135,6: NAME midi/program_bank_onload "JS: MIDI Program/Bank Switch on Load"
+  135,36: NAME midi/program_bank_onload "JS: MIDI Program/Bank Switch on Load"
+  136,6: NAME midi/sequencer_baby "JS: MIDI Sequencer Baby"
+  136,31: NAME midi/sequencer_baby "JS: MIDI Sequencer Baby"
+  137,6: NAME midi/sequencer_baby_v2 "JS: MIDI Sequencer Baby v2"
+  137,34: NAME midi/sequencer_baby_v2 "JS: MIDI Sequencer Baby v2"
+  138,6: NAME midi/sequencer_megababy "JS: MIDI Sequencer Megababy"
+  138,35: NAME midi/sequencer_megababy "JS: MIDI Sequencer Megababy"
+  158,12: NAME schwa/midi_examine "JS: MIDI Examiner"
+  158,30: NAME schwa/midi_examine "JS: MIDI Examiner"
+  159,12: NAME schwa/midi_humanizer "JS: MIDI Velocity and Timing Humanizer"
+  159,32: NAME schwa/midi_humanizer "JS: MIDI Velocity and Timing Humanizer"
+  160,12: NAME schwa/midi_modal_randomness "JS: MIDI Modal Randomness"
+  160,39: NAME schwa/midi_modal_randomness "JS: MIDI Modal Randomness"
+  189,33: NAME sstillwell/randomizer "JS: MIDI Note Randomize"
+  197,31: NAME sstillwell/volscale "JS: MIDI Velocity Scaler/Compressor"
+  248,15: REV "Audio To MIDI Drum Trigger" midi/drumtrigger
+  248,34: REV "Audio To MIDI Drum Trigger" midi/drumtrigger
+  316,21: REV "Loop Sampler w/MIDI Triggers" loopsamplers/loopsampler-m2-midi
+  316,64: REV "Loop Sampler w/MIDI Triggers" loopsamplers/loopsampler-m2-midi
+  327,6: REV "MIDI Arpeggiator" midi/midi_arp
+  327,24: REV "MIDI Arpeggiator" midi/midi_arp
+  327,29: REV "MIDI Arpeggiator" midi/midi_arp
+  328,6: REV "MIDI CC LFO Generator" IX/MIDI_CCRider
+  328,32: REV "MIDI CC LFO Generator" IX/MIDI_CCRider
+  329,6: REV "MIDI CC Mapper" midi/midi_CC_mapper
+  329,22: REV "MIDI CC Mapper" midi/midi_CC_mapper
+  329,27: REV "MIDI CC Mapper" midi/midi_CC_mapper
+  330,6: REV "MIDI Choke" midi/midi_choke
+  330,18: REV "MIDI Choke" midi/midi_choke
+  330,23: REV "MIDI Choke" midi/midi_choke
+  331,6: REV "MIDI Chord In Key" midi/midi_chordkey
+  331,25: REV "MIDI Chord In Key" midi/midi_chordkey
+  331,30: REV "MIDI Chord In Key" midi/midi_chordkey
+  332,6: REV "MIDI Chorderizer" midi/midi_chorderizer
+  332,24: REV "MIDI Chorderizer" midi/midi_chorderizer
+  332,29: REV "MIDI Chorderizer" midi/midi_chorderizer
+  333,6: REV "MIDI Delay" midi/midi_delay
+  333,18: REV "MIDI Delay" midi/midi_delay
+  333,23: REV "MIDI Delay" midi/midi_delay
+  334,6: REV "MIDI Duplicate Note Filter" IX/MIDI_DuplicateFilter
+  334,37: REV "MIDI Duplicate Note Filter" IX/MIDI_DuplicateFilter
+  335,6: REV "MIDI EQ Ducker" loser/MIDI_EQ_Ducker
+  335,28: REV "MIDI EQ Ducker" loser/MIDI_EQ_Ducker
+  336,6: REV "MIDI Examiner" schwa/midi_examine
+  336,27: REV "MIDI Examiner" schwa/midi_examine
+  337,6: REV "MIDI Logger" midi/midi_logger
+  337,19: REV "MIDI Logger" midi/midi_logger
+  337,24: REV "MIDI Logger" midi/midi_logger
+  338,6: REV "MIDI Map To Key" midi/midi_maptokey
+  338,23: REV "MIDI Map To Key" midi/midi_maptokey
+  338,28: REV "MIDI Map To Key" midi/midi_maptokey
+  339,6: REV "MIDI Map To Key v2" IX/MIDI_KeyMap
+  339,29: REV "MIDI Map To Key v2" IX/MIDI_KeyMap
+  340,6: REV "MIDI Modal Randomness" schwa/midi_modal_randomness
+  340,35: REV "MIDI Modal Randomness" schwa/midi_modal_randomness
+  341,6: REV "MIDI Note Filter" midi/midi_note_filter
+  341,24: REV "MIDI Note Filter" midi/midi_note_filter
+  341,29: REV "MIDI Note Filter" midi/midi_note_filter
+  342,6: REV "MIDI Note Hold" midi/midi_note_hold
+  342,22: REV "MIDI Note Hold" midi/midi_note_hold
+  342,27: REV "MIDI Note Hold" midi/midi_note_hold
+  343,6: REV "MIDI Note Randomize" sstillwell/randomizer
+  344,6: REV "MIDI Note Repeater" midi/midi_note_repeater
+  344,26: REV "MIDI Note Repeater" midi/midi_note_repeater
+  344,31: REV "MIDI Note Repeater" midi/midi_note_repeater
+  345,6: REV "MIDI Note-On Delay" midi/midinoteondelay
+  345,26: REV "MIDI Note-On Delay" midi/midinoteondelay
+  345,31: REV "MIDI Note-On Delay" midi/midinoteondelay
+  346,6: REV "MIDI Pattern/Scale Variation Generator" IX/MIDI_Variant
+  346,49: REV "MIDI Pattern/Scale Variation Generator" IX/MIDI_Variant
+  347,6: REV "MIDI Pitch Wheel LFO" IX/MIDI_Wobulator
+  347,31: REV "MIDI Pitch Wheel LFO" IX/MIDI_Wobulator
+  348,6: REV "MIDI Program/Bank Switch on Load" midi/program_bank_onload
+  348,40: REV "MIDI Program/Bank Switch on Load" midi/program_bank_onload
+  349,6: REV "MIDI Route Note To Channel" midi/midi_note2channel
+  349,34: REV "MIDI Route Note To Channel" midi/midi_note2channel
+  349,39: REV "MIDI Route Note To Channel" midi/midi_note2channel
+  350,6: REV "MIDI Router/Transpose" IX/MIDI_Router
+  350,32: REV "MIDI Router/Transpose" IX/MIDI_Router
+  351,6: REV "MIDI Sequencer Baby" midi/sequencer_baby
+  351,27: REV "MIDI Sequencer Baby" midi/sequencer_baby
+  352,6: REV "MIDI Sequencer Baby v2" midi/sequencer_baby_v2
+  352,30: REV "MIDI Sequencer Baby v2" midi/sequencer_baby_v2
+  353,6: REV "MIDI Sequencer Megababy" midi/sequencer_megababy
+  353,31: REV "MIDI Sequencer Megababy" midi/sequencer_megababy
+  354,6: REV "MIDI Snap To Key" IX/MIDI_KeySnap
+  354,27: REV "MIDI Snap To Key" IX/MIDI_KeySnap
+  355,6: REV "MIDI Tool" IX/MIDI_Tool
+  355,20: REV "MIDI Tool" IX/MIDI_Tool
+  356,6: REV "MIDI Tool v2" "IX/MIDI_Tool II"
+  356,24: REV "MIDI Tool v2" "IX/MIDI_Tool II"
+  357,6: REV "MIDI Transpose Notes" midi/midi_transpose
+  357,28: REV "MIDI Transpose Notes" midi/midi_transpose
+  357,33: REV "MIDI Transpose Notes" midi/midi_transpose
+  358,6: REV "MIDI Velocity Control" midi/midi_velocitycontrol
+  358,29: REV "MIDI Velocity Control" midi/midi_velocitycontrol
+  358,34: REV "MIDI Velocity Control" midi/midi_velocitycontrol
+  359,6: REV "MIDI Velocity Scaler/Compressor" sstillwell/volscale
+  360,6: REV "MIDI Velocity Variation Generator" "IX/MIDI_Velocifier II"
+  360,45: REV "MIDI Velocity Variation Generator" "IX/MIDI_Velocifier II"
+  361,6: REV "MIDI Velocity and Timing Humanizer" schwa/midi_humanizer
+  361,48: REV "MIDI Velocity and Timing Humanizer" schwa/midi_humanizer
+  362,6: REV "MIDI note sanitizer" midi/midi_note_sanitizer
+  362,27: REV "MIDI note sanitizer" midi/midi_note_sanitizer
+  362,32: REV "MIDI note sanitizer" midi/midi_note_sanitizer
+  363,18: REV "MTC Logger" midi/mtc_logger
+  415,13: REV "Super8 MIDI-controlled synchronized looper (Cockos)" loopsamplers/super8
+  480,9: TAGS IX/MIDI_CCRider "MIDI modulation generator LFO"
+  480,23: TAGS IX/MIDI_CCRider "MIDI modulation generator LFO"
+  481,9: TAGS IX/MIDI_DuplicateFilter "MIDI filter processing"
+  481,31: TAGS IX/MIDI_DuplicateFilter "MIDI filter processing"
+  482,9: TAGS IX/MIDI_KeyMap "MIDI processing mapping"
+  482,22: TAGS IX/MIDI_KeyMap "MIDI processing mapping"
+  483,9: TAGS IX/MIDI_KeySnap "MIDI processing mapping"
+  483,23: TAGS IX/MIDI_KeySnap "MIDI processing mapping"
+  484,9: TAGS IX/MIDI_Router "MIDI processing routing"
+  484,22: TAGS IX/MIDI_Router "MIDI processing routing"
+  485,9: TAGS IX/MIDI_Tool "MIDI processing"
+  485,20: TAGS IX/MIDI_Tool "MIDI processing"
+  486,10: TAGS "IX/MIDI_Tool II" "MIDI processing"
+  486,25: TAGS "IX/MIDI_Tool II" "MIDI processing"
+  487,9: TAGS IX/MIDI_Variant "MIDI processing mapping"
+  487,23: TAGS IX/MIDI_Variant "MIDI processing mapping"
+  488,10: TAGS "IX/MIDI_Velocifier II" "MIDI processing mapping"
+  488,31: TAGS "IX/MIDI_Velocifier II" "MIDI processing mapping"
+  489,9: TAGS IX/MIDI_Wobulator "MIDI modulation generator LFO"
+  489,25: TAGS IX/MIDI_Wobulator "MIDI modulation generator LFO"
+  522,34: TAGS loopsamplers/loopsampler-m2-midi "processing sampler"
+  543,12: TAGS loser/MIDI_EQ_Ducker "dynamics equalizer compressor processing MIDI"
+  543,69: TAGS loser/MIDI_EQ_Ducker "dynamics equalizer compressor processing MIDI"
+  561,6: TAGS midi/drumtrigger "processing MIDI generator"
+  561,35: TAGS midi/drumtrigger "processing MIDI generator"
+  562,6: TAGS midi/midi_arp "MIDI processing"
+  562,11: TAGS midi/midi_arp "MIDI processing"
+  562,21: TAGS midi/midi_arp "MIDI processing"
+  563,6: TAGS midi/midi_CC_mapper "MIDI processing routing"
+  563,11: TAGS midi/midi_CC_mapper "MIDI processing routing"
+  563,27: TAGS midi/midi_CC_mapper "MIDI processing routing"
+  564,6: TAGS midi/midi_choke "MIDI processing"
+  564,11: TAGS midi/midi_choke "MIDI processing"
+  564,23: TAGS midi/midi_choke "MIDI processing"
+  565,6: TAGS midi/midi_chorderizer "MIDI processing"
+  565,11: TAGS midi/midi_chorderizer "MIDI processing"
+  565,29: TAGS midi/midi_chorderizer "MIDI processing"
+  566,6: TAGS midi/midi_chordkey "MIDI processing"
+  566,11: TAGS midi/midi_chordkey "MIDI processing"
+  566,26: TAGS midi/midi_chordkey "MIDI processing"
+  567,6: TAGS midi/midi_logger "MIDI analysis utility"
+  567,11: TAGS midi/midi_logger "MIDI analysis utility"
+  567,24: TAGS midi/midi_logger "MIDI analysis utility"
+  568,6: TAGS midi/midi_maptokey "MIDI processing"
+  568,11: TAGS midi/midi_maptokey "MIDI processing"
+  568,26: TAGS midi/midi_maptokey "MIDI processing"
+  569,6: TAGS midi/midi_note2channel "MIDI processing routing"
+  569,11: TAGS midi/midi_note2channel "MIDI processing routing"
+  569,30: TAGS midi/midi_note2channel "MIDI processing routing"
+  570,6: TAGS midi/midi_note_filter "MIDI processing filter"
+  570,11: TAGS midi/midi_note_filter "MIDI processing filter"
+  570,29: TAGS midi/midi_note_filter "MIDI processing filter"
+  571,6: TAGS midi/midi_note_hold "MIDI processing"
+  571,11: TAGS midi/midi_note_hold "MIDI processing"
+  571,27: TAGS midi/midi_note_hold "MIDI processing"
+  572,6: TAGS midi/midi_note_repeater "MIDI processing"
+  572,11: TAGS midi/midi_note_repeater "MIDI processing"
+  572,31: TAGS midi/midi_note_repeater "MIDI processing"
+  573,6: TAGS midi/midi_note_sanitizer "MIDI filter processing"
+  573,11: TAGS midi/midi_note_sanitizer "MIDI filter processing"
+  573,32: TAGS midi/midi_note_sanitizer "MIDI filter processing"
+  574,6: TAGS midi/midi_transpose "MIDI processing"
+  574,11: TAGS midi/midi_transpose "MIDI processing"
+  574,27: TAGS midi/midi_transpose "MIDI processing"
+  575,6: TAGS midi/midi_velocitycontrol "MIDI processing"
+  575,11: TAGS midi/midi_velocitycontrol "MIDI processing"
+  575,33: TAGS midi/midi_velocitycontrol "MIDI processing"
+  576,6: TAGS midi/midinoteondelay "MIDI processing delay"
+  576,11: TAGS midi/midinoteondelay "MIDI processing delay"
+  576,28: TAGS midi/midinoteondelay "MIDI processing delay"
+  577,6: TAGS midi/mtc_logger "MIDI analysis utility"
+  577,23: TAGS midi/mtc_logger "MIDI analysis utility"
+  578,6: TAGS midi/program_bank_onload "MIDI generator"
+  578,32: TAGS midi/program_bank_onload "MIDI generator"
+  579,6: TAGS midi/sequencer_baby "MIDI generator sequencing"
+  579,27: TAGS midi/sequencer_baby "MIDI generator sequencing"
+  580,6: TAGS midi/sequencer_baby_v2 "MIDI generator sequencing"
+  580,30: TAGS midi/sequencer_baby_v2 "MIDI generator sequencing"
+  581,6: TAGS midi/sequencer_megababy "MIDI generator sequencing"
+  581,31: TAGS midi/sequencer_megababy "MIDI generator sequencing"
+  600,12: TAGS schwa/midi_examine "MIDI analysis utility"
+  600,26: TAGS schwa/midi_examine "MIDI analysis utility"
+  601,12: TAGS schwa/midi_humanizer "MIDI processing"
+  601,28: TAGS schwa/midi_humanizer "MIDI processing"
+  602,12: TAGS schwa/midi_modal_randomness "MIDI generator"
+  602,35: TAGS schwa/midi_modal_randomness "MIDI generator"
+  631,29: TAGS sstillwell/randomizer "MIDI processing generator"
+  639,27: TAGS sstillwell/volscale "MIDI processing"
+
+/Users/user1/Library/Application Support/REAPER/Effects/midi/midi_chordkey
+  1,6: desc:MIDI Chord In Key
+  2,9: //tags: MIDI processing
+  8,31: slider5:0<0,127,1>Lowest Key (MIDI Note #)
+  9,34: slider6:127<0,127,1>Highest Key (MIDI Note #)
+  49,1: midirecv(ts,msg1,msg23) ?
+  79,33:       note >= 0 && note < 128 ? midisend(ts,9*16,note+vel); // send note on
+  80,35:       note2 >= 0 && note2 < 128 ? midisend(ts,9*16,note2+vel2); // send note on
+  81,35:       note3 >= 0 && note3 < 128 ? midisend(ts,9*16,note3+vel2); // send note on
+  83,33:       note >= 0 && note < 128 ? midisend(ts,8*16,note); // send note off
+  84,36:       note2 >= 0 && note2 < 128 ?  midisend(ts,8*16,note2); // send note off
+  85,35:       note3 >= 0 && note3 < 128 ? midisend(ts,8*16,note3); // send note off
+  89,5:     midisend(ts,msg1,msg23);
+
+/Users/user1/Library/Application Support/REAPER/Scripts/ReaTeam Scripts/Tracks Properties/patrickmartin_Setup Multi-Out VST.lua
+  4,46: -- @changelog Corrected channel numbering of MIDI sends (CalcMIDIChannel)
+  4,62: -- @changelog Corrected channel numbering of MIDI sends (CalcMIDIChannel)
+  13,22: --   [*]Creates # of MIDI tracks you specify. Each track input is set to the MIDI device you specify, with each track configured to send data to the VST on a separate MIDI channel (1-16 and 16 for all tracks beyond #16)
+  13,78: --   [*]Creates # of MIDI tracks you specify. Each track input is set to the MIDI device you specify, with each track configured to send data to the VST on a separate MIDI channel (1-16 and 16 for all tracks beyond #16)
+  13,168: --   [*]Creates # of MIDI tracks you specify. Each track input is set to the MIDI device you specify, with each track configured to send data to the VST on a separate MIDI channel (1-16 and 16 for all tracks beyond #16)
+  16,39: --   [*]Creates folder tracks for the MIDI and audio channels
+  17,20: --   [*]Colors the MIDI and audio tracks to RGB values you specify
+  32,24: --   --This # of audio/MIDI track pairs will be created.
+  33,17: --   --  * each MIDI track will receive on all channels but send on only 1
+  38,16: --   --name of MIDI input device or nil to use all inputs
+  39,9: --   uc_MIDI_input_device_name = "masterkey 49"
+  41,28: --   --Optional: Color for MIDI tracks {R, G, B} or {}
+  42,21: --   uc_track_color_MIDI = {255, 204, 204}
+  47,51: --   --Optional: Track name abbreviations {audio, MIDI}
+  73,18: c_track_recinput_midi = 4096
+  77,17: c_track_recmode_midi = 4
+  99,4: gv_MIDI_inputs = {}
+  112,19: --This # of audio/MIDI track pairs will be created.
+  113,12: --  * each MIDI track will receive on all channels but send on only 1
+  118,11: --name of MIDI input device or nil to use first available device
+  119,4: uc_MIDI_input_device_name = "masterkey 49"
+  121,23: --Optional: Color for MIDI tracks {R, G, B} or {}
+  122,16: uc_track_color_MIDI = {255, 204, 204}
+  127,46: --Optional: Track name abbreviations {audio, MIDI}
+  144,32:   local ret = c_track_recinput_midi | ((input << INPUT_OFFSET) | channel)
+  149,28: --returns table containing MIDI input indexes/names
+  150,13: function GetMIDIInputs()
+  152,24:   count = reaper.GetNumMIDIInputs()
+  154,37:     retval, device_name = reaper.GetMIDIInputName(i, '')
+  155,12:     --Msg("MIDI Input " .. i .. "=" .. device_name)
+  180,22:   --Set rec mode for midi input
+  181,70:   reaper.SetMediaTrackInfo_Value(track, "I_RECMODE", c_track_recmode_midi)
+  204,26: --Returns index of named MIDI input
+  205,13: function GetMIDIInputByName(name)
+  208,18:   local ret = gv_MIDI_Inputs[name] or -1
+  209,13:   --Msg("GetMIDIInputByName(" .. name .. ")=".. ret)
+  213,23: --Sets track input to MIDI device/channel
+  214,18: function SetTrackMIDIInput(track, input_name, channel)
+  220,20:     input_idx = GetMIDIInputByName(input_name)
+  230,16: function ConfigMIDISendTrack(send_track, rcv_track, rcv_channel, dest_channel, input_device)
+  231,9:   --Set MIDI input device for instrument track
+  232,11:   SetTrackMIDIInput(send_track, input_device, ALL_CHANNELS)
+  234,22:   --Set rec mode for midi input
+  235,75:   reaper.SetMediaTrackInfo_Value(send_track, "I_RECMODE", c_track_recmode_midi)
+  244,9:   local midi_flags = (dest_channel << 5) | rcv_channel;
+  245,80:   reaper.SetTrackSendInfo_Value(send_track, c_send_category_send, send_idx, "I_MIDIFLAGS", midi_flags)
+  245,92:   reaper.SetTrackSendInfo_Value(send_track, c_send_category_send, send_idx, "I_MIDIFLAGS", midi_flags)
+  274,14: function CalcMIDIChannel(index)
+  282,58: function InsertTracks(vst_track, qty, create_folder, for_midi)
+  287,22:   if #uc_track_color_MIDI > 0 then
+  288,23:     track_color = for_midi and uc_track_color_MIDI or uc_track_color_audio
+  288,47:     track_color = for_midi and uc_track_color_MIDI or uc_track_color_audio
+  294,16:     name = for_midi and uc_track_name_abbreviations[2] or uc_track_name_abbreviations[1]
+  296,16:     name = for_midi and uc_vst_name .. " MIDI" or uc_vst_name .. " Out"
+  296,42:     name = for_midi and uc_vst_name .. " MIDI" or uc_vst_name .. " Out"
+  325,21:     --Configure for MIDI or audio
+  326,12:     if for_midi then
+  328,32:       local send_channel = CalcMIDIChannel(i)
+  329,13:       ConfigMIDISendTrack(track, vst_track, c_send_rcv_all_channels, send_channel, uc_MIDI_input_device_name)
+  329,87:       ConfigMIDISendTrack(track, vst_track, c_send_rcv_all_channels, send_channel, uc_MIDI_input_device_name)
+  365,18: function ValidateMIDIInput(name)
+  366,9:   if GetMIDIInputByName(name) == -1 then
+  373,27:   --Build global table of MIDI inputs
+  374,6:   gv_MIDI_Inputs = GetMIDIInputs()
+  374,23:   gv_MIDI_Inputs = GetMIDIInputs()
+  376,8:   --if MIDI input device specified, validate it
+  377,11:   ValidateMIDIInput(uc_MIDI_input_device_name)
+  377,24:   ValidateMIDIInput(uc_MIDI_input_device_name)
+  380,49:   vst_track, fxid = AddVST(uc_vst_name, nil, uc_MIDI_input_device_name, uc_vst_stereo_outs)
+  383,14:     --Insert MIDI tracks
+  384,5:     midi_folder = InsertTracks(vst_track, uc_vst_stereo_outs, true, true)
+  390,8:     if midi_folder then
+  391,24:       SetFolderCompact(midi_folder, c_folder_compact_tiny)

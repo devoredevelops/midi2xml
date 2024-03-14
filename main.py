@@ -44,10 +44,10 @@ def write_measure_attributes(
     return attributes
 
 
-"""returns note type (whole note, half note, etc.)"""
 
 
 def get_note_type(note_duration):
+  """returns note type (whole note, half note, etc.)"""
     note_type = ""
     while note_duration >= 4:
         if note_type != "":
