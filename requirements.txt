@@ -68,6 +68,7 @@ MarkupSafe
 matplotlib
 matplotlib-inline
 mesh-tensorflow
+music21
 mido
 mir-eval
 ml-dtypes
