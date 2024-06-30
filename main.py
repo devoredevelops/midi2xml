@@ -6,7 +6,6 @@ import xml.etree.ElementTree as ET
 """given the current measure, number of accidentals in the key (- for flats, + for sharps), and the current time signature,
 returns an element containing attributes for the current measure"""
 
-
 def write_measure_attributes(
     current_measure, key_accidentals, time_signature, clef_type
 ):
