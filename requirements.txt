@@ -1,4 +1,3 @@
-
 absl-py
 appnope
 array-record
@@ -69,12 +68,11 @@ MarkupSafe
 matplotlib
 matplotlib-inline
 mesh-tensorflow
-midiutil
+music21
 mido
 mir-eval
 ml-dtypes
 mpmath
-music21
 networkx
 note-seq
 numba
